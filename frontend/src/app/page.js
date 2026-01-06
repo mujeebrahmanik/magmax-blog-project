@@ -60,7 +60,8 @@ export default async function Home(props) {
           <ArticleCard article={i} key={index}/>
         ))}
       </div>
-
+      
+      {/* pagination */}
         {totalPages>1 &&(
             <div className="flex justify-center items-center gap-2 lg:mt-2 mt-6">
               {page > 1 ?(
