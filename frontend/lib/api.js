@@ -2,8 +2,15 @@ import axios from "axios";
 
 const API_URL = 'http://127.0.0.1:8000/api'
 
-export const getArticles = async (page) => {
-  const res = await fetch(`${API_URL}/article/?page=${page}`, {
+export const getArticles = async (page = 1, search ='') => {
+
+  let url = `${API_URL}/article/?page=${page}`;
+ 
+  if (search){
+    url +=`&search=${encodeURIComponent(search)}`
+  }
+
+   const res = await fetch(url, {
     cache: 'no-store',
     next: { revalidate: 0 }
   });

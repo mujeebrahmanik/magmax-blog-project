@@ -15,6 +15,8 @@ class Category_view(generics.ListAPIView):
 class Article_view(generics.ListAPIView):
     queryset = Article.objects.filter(status='published')
     serializer_class = Article_serializer
+    filter_backends = [filters.SearchFilter, DjangoFilterBackend]
+    search_fields = ['title','content','excerpt']
     lookup_field = 'slug'
     
     
