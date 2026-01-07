@@ -6,5 +6,4 @@ urlpatterns = [
     path('article/',Article_view.as_view(),name='article'),
     path('article/<slug:slug>/',Article__detail_view.as_view(),name='article_detail'),
 
-
 ]
