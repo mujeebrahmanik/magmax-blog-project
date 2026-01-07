@@ -22,7 +22,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "https://django-react-todo-app-1-rizw.onrender.com",  
+    "https://magmax-blog-project.vercel.app",  
 ]
 
 
