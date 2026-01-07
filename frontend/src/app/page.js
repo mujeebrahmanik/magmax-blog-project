@@ -33,8 +33,8 @@ export default async function Home(props) {
  
 
   return (
-    <div className="flex flex-col min-h-screen justify-center bg-zinc-50 font-sans dark:bg-black">
-     <div className="flex flex-col py-10 px-15 max-w-[1400px]">
+    <div className="flex flex-col min-h-screen justify-center  bg-zinc-50 font-sans dark:bg-black">
+     <div className="flex flex-col py-10 px-15 max-w-[1400px] ">
       <h1 className="text-4xl text-center font-bold mt-5 mb-3">
         Latest Articles
       </h1>
