@@ -8,6 +8,7 @@ const nextConfig = {
     },
   images: {
     remotePatterns: [
+      
       {
         protocol: 'http',
         hostname: '127.0.0.1',
@@ -19,6 +20,12 @@ const nextConfig = {
         hostname: 'localhost',
         port: '8000',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'magmax-blog-project.onrender.com',
+        port: '',
+        pathname: '/media/**',
       },
     ],
     unoptimized: true,
